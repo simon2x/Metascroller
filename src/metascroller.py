@@ -139,7 +139,7 @@ menu = (
         on_toggle_enabled,
         checked=lambda item: enabled_state),
     item('Quit MetaScroller', quit))
-icon = pystray.Icon("name", icon_enabled, "title", menu)
+icon = pystray.Icon("name", icon_enabled, "Metascroller", menu)
 app.daemon = True
 app.start()
 icon.run()
